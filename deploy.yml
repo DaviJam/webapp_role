@@ -31,18 +31,18 @@
       file:
         path: /home/admin/webapp
         state: directory
-        mode: '0755' 
         
     - name: "Download data from git repo"
       git:
         repo: 'https://github.com/diranetafen/static-website-example.git'
-        dest: /home/admin/webapp/
+        dest: /home/admin/webapp
 
     - name: "launch docker container"
       docker_container:
         name: webapp
         image: httpd
-        ports: "8080:80"
+        ports: 
+          - "80:80"
         volumes:
-        - /home/admin/webapp:/usr/local/apache2/htdocs/:rw
+          - /home/admin/webapp/:/usr/local/apache2/htdocs/:rw
 
