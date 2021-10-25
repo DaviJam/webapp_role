@@ -1,3 +1,7 @@
 ### Ansible project deployment example
 
-ansible-playbook -i hosts playbook
+Run command to deploy 
+> ansible-playbook -i hosts playbook
+
+#### Ansible documentation
+https://docs.ansible.com/ansible/latest/
