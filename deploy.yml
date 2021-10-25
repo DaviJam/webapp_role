@@ -27,17 +27,16 @@
       pip: name=docker-py
 
   tasks: 
-    - name: "Download data from git repo"
-      command: git clone https://github.com/diranetafen/static-website-example.git
-    
     - name: "Create directory webapp"
       file:
         path: /webapp
         state: directory
         mode: '0755' 
-
-    - name: "Copy content to webapp folder"
-      command: cp -a /static-website-example/ /webapp/
+        
+    - name: "Download data from git repo"
+      git:
+        repo: git clone https://github.com/diranetafen/static-website-example.git
+        dest: /home/admin/webapp/
 
     - name: "launch docker container"
       docker_container:
