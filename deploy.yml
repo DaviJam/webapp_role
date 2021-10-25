@@ -35,7 +35,7 @@
         
     - name: "Download data from git repo"
       git:
-        repo: git clone https://github.com/diranetafen/static-website-example.git
+        repo: https://github.com/diranetafen/static-website-example.git
         dest: /home/admin/webapp/
 
     - name: "launch docker container"
