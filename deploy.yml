@@ -1,7 +1,10 @@
 ---
 - name: Deploy a container
   hosts: all
+  vars_files:
+    - /home/admin/Ansible/files/secrets/credentials.vault
   pre_tasks:
+    
     - name: install dependencies
       yum:
         name: "epel-release"
@@ -24,6 +27,7 @@
       pip: name=docker-py
 
   tasks: 
+   
     - name: "Create directory webapp"
       file:
         path: /home/admin/webapp
