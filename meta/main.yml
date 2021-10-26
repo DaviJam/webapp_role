@@ -1,0 +1,6 @@
+---
+galaxy_info:
+  role_name: webapp_role
+  author: David
+  description: Ansible webapp role
+  company: APPICIEL

@@ -1,0 +1,10 @@
+---
+administrator: David
+ansible_user: admin
+
+instance_1:
+  name: INTEGRAL
+  port: 8080
+  site_name: webapp
+  docker-name: webapp
+  title: my_website
