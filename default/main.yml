@@ -1,6 +1,5 @@
 ---
 ansible_user: admin
-name: INTEGRAL
 port: 8080
 project_name: webapp
 docker_image_name: webapp
