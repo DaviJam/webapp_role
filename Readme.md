@@ -20,8 +20,8 @@ The Instance 1 variables, uses to create ressources of this specific webapp inst
       name: GRETA
       port: 8080
       docker_name: webpp
-      site_name: Webapp 
-      title: My_website # name that should shown 
+      project_name: Webapp 
+      html_title: My_website # name that should shown 
 
 
 ## Dependencies
@@ -38,7 +38,7 @@ None.
   vars_files:
     - files/secrets/credentials.yml
   roles:
-    - davidjam.webapp
+    - davidjam.webapp_role
 ```
 
 ## Author Information
