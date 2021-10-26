@@ -1,9 +1,7 @@
 ---
 ansible_user: admin
-
-instance_1:
-  name: INTEGRAL
-  port: 8080
-  project_name: webapp
-  docker_image_name: webapp
-  html_title: my_website
+name: INTEGRAL
+port: 8080
+project_name: webapp
+docker_image_name: webapp
+html_title: my_website
