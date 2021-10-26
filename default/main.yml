@@ -6,5 +6,5 @@ instance_1:
   name: INTEGRAL
   port: 8080
   site_name: webapp
-  docker-name: webapp
+  docker_name: webapp
   title: my_website
