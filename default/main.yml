@@ -1,5 +1,4 @@
 ---
-administrator: David
 ansible_user: admin
 
 instance_1:
